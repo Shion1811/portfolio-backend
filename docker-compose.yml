@@ -1,0 +1,7 @@
+services:
+  app:
+    build: ./
+    volumes:
+      - .:/app/backend
+    ports:
+      - 8989:8000
