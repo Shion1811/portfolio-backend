@@ -5,3 +5,12 @@ services:
       - .:/app/backend
     ports:
       - 8989:8000
+  db:
+    image: mysql:8.3
+    volumes:
+      - ./mysql_data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: zzzz
+      MYSQL_DATABASE: laravel
+    ports:
+      - 3306:3306
