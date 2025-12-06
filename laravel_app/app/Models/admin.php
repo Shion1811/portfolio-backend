@@ -12,6 +12,6 @@ class admin extends Model
         "explanation",
         "image",
         "tags",
-        "url",
+        "urls",
     ];
 }
